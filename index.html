@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>7 Miles Coffee</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  
+  <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Archivo+Black&family=Marcellus&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <script src="script.js"></script>
+</div>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div id="logo">
+        <img src="logo.png" height="100" width="90" alt="Logo" />
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#menu">Menu</a>
+        <a href="#payment">Payment</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="hero-section">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="COFFEE COMMERCIAL ADVERTISEMENT - 7 miles roasters coffee beans ad.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    </div>
+  </section>
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>About 7 Miles Coffee</h2>
+        <p>
+          We are passionate about every cup.<br />
+          At 7 Miles Coffee, we roast our beans with care and serve them with love.
+          Our mission is to bring warmth, energy, and joy to your everyday coffee experience.
+        </p>
+      </div>
+      <div class="about-video">
+        <div class="video-wrapper">
+          <video width="640" height="360" controls poster="coffee.mp4">
+            <source src="coffee.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p class="video-caption">
+            Meet one of our best baristas crafting every cup with passion and precision.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Quiz Section -->
+<section id="quiz" class="quiz-section">
+  <h2>Quick Coffee Quiz ☕</h2>
+  <form id="quizForm" class="quiz-form">
+    <p>Which country is known as the birthplace of coffee?</p>
+    
+    <label>
+      <input type="radio" name="quiz" value="Brazil" />
+      Brazil
+    </label><br />
+    
+    <label>
+      <input type="radio" name="quiz" value="Ethiopia" />
+      Ethiopia
+    </label><br />
+    
+    <label>
+      <input type="radio" name="quiz" value="Italy" />
+      Italy
+    </label><br />
+
+    <button type="submit" class="menu-button">Check Answer</button>
+    
+    <p id="quiz-feedback" class="quiz-feedback"></p>
+  </form>
+</section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="services-content">
+      <h2>Our Services</h2>
+      <div class="services-container">
+        <div class="service-card">
+          <img src="barista.png" alt="barista" />
+          <h3>Signature Espresso Bar</h3>
+          <p>
+            Experience the heart of our coffee craft with hand-pulled espresso shots, velvety crema, and rich aromas made by skilled baristas.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="beans.png" alt="Coffee Beans" />
+          <h3>Fresh Roasted Beans</h3>
+          <p>
+            We roast our beans in-house with precision and passion. Choose from a variety of single origin and blended coffees.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="CAFE.png" alt="Work & Relax Lounge" />
+          <h3>Work & Relax Lounge</h3>
+          <p>
+            Cozy up or plug in. Our café has dedicated quiet corners with free Wi-Fi for studying, remote work, or creative thinking.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu-section">
+    <h2>Our Menu</h2>
+    <div class="menu-container">
+      <div class="menu-item">
+        <img src="latte.png" alt="Latte" />
+        <h3>Classic Latte</h3>
+        <p>$3.50</p>
+        <button class="add-to-cart" data-name="Classic Latte" data-price="3.50">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="cold brew.png" alt="Cold Brew" />
+        <h3>Cold Brew</h3>
+        <p>$4.00</p>
+        <button class="add-to-cart" data-name="Cold Brew" data-price="4.00">Add to Cart</button>
+      </div>
+      <div class="menu-item">
+        <img src="capcchino.jpg" alt="Cappuccino" />
+        <h3>Cappuccino</h3>
+        <p>$3.75</p>
+        <button class="add-to-cart" data-name="Cappuccino" data-price="3.75">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Cart -->
+    <div id="cart" class="cart-box">
+      <h3>🛒 Your Cart</h3>
+      <ul id="cart-items"></ul>
+      <p id="cart-total">Total: $0.00</p>
+      <a href="#payment" class="menu-button">Proceed to Payment</a>
+    </div>
+  </section>
+  <!-- Payment Section -->
+<section id="payment" class="payment-section">
+  <h2>Secure Payment</h2>
+  <form id="paymentForm" class="payment-form">
+    <label for="name">Cardholder Name</label>
+    <input type="text" id="name" placeholder="John Doe" required />
+
+    <label for="cardNumber">Card Number</label>
+    <input type="text" id="cardNumber" maxlength="16" placeholder="1234 5678 9012 3456" required />
+
+    <label for="expiry">Expiry Date</label>
+    <input type="text" id="expiry" maxlength="5" placeholder="MM/YY" required />
+
+    <label for="cvv">CVV</label>
+    <input type="text" id="cvv" maxlength="4" placeholder="123" required />
+
+    <button type="submit" class="menu-button">Pay Now</button>
+    <p id="payment-success" style="display:none; color: green; margin-top: 15px;">✅ Payment Successful! Thank you!</p>
+  </form>
+</section>
+
+  <!-- Footer -->
+  <section class="home-section">
+    <p>&copy; 7 Miles Coffee. All rights reserved.</p>
+  </section>
+
+</body>
+</html>
